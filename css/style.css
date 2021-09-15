@@ -573,3 +573,43 @@ li {
     top: 9rem;
   }
 }
+
+@media only screen and (max-width: 430px) {
+  .hero-image {
+    height: 440px;
+    width: 440px;
+    left: -14.5rem;
+    top: 6rem;
+  }
+
+  .download-btn {
+    left: 2.7rem;
+  }
+
+  .hero-text,
+  .sub-hero-text {
+    text-align: center;
+    position: relative;
+    left: -2rem;
+    top: -2rem;
+  }
+
+  .sub-hero-text {
+    left: -1rem;
+  }
+
+  .btc-para {
+    font-size: 30px;
+  }
+
+  .phrase-list {
+    top: 145rem;
+    left: 2rem;
+  }
+
+  .form-container {
+    margin-bottom: 15rem;
+    bottom: 150rem;
+    width: 80%;
+  }
+}
