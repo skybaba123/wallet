@@ -612,4 +612,9 @@ li {
     bottom: 150rem;
     width: 80%;
   }
+  
+   .footer-text {
+    left: 1.2rem;
+  }
+  
 }
