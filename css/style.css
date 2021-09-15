@@ -1,0 +1,575 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+  list-style: none;
+  text-decoration: none;
+}
+
+html,
+body {
+  background-color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  /* scroll-behavior: smooth; */
+}
+
+.header {
+  width: 100%;
+  height: 87vh;
+  background-color: #3479b9;
+  position: relative;
+}
+
+/* .header-element {
+  position: relative;
+} */
+
+.nav-bar {
+  position: absolute;
+  color: #ffffff;
+  top: 2rem;
+  left: 39%;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.title-container {
+  position: absolute;
+  left: -18rem;
+  top: -0.05rem;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.nav-image {
+  position: absolute;
+  width: 37px;
+  height: 37px;
+  left: -3.2rem;
+  top: -0.37rem;
+  cursor: pointer;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.main-link {
+  word-spacing: 43px;
+  cursor: pointer;
+}
+
+.nav-link:hover {
+  color: #ffffffab;
+}
+
+#title:hover {
+  color: #ffffff;
+}
+
+.dapp {
+  word-spacing: normal;
+}
+
+.earnP {
+  word-spacing: normal;
+  font-size: 11.5px;
+  background-color: rgba(55, 212, 133, 0.568);
+  border-radius: 5px;
+  padding: 0 9px;
+  font-weight: 400;
+}
+
+.earn {
+  word-spacing: 10px;
+}
+
+.download-btn {
+  position: relative;
+  left: -0.7rem;
+  height: 50px;
+  width: 155px;
+  background-color: black;
+  border: none;
+  border-radius: 5px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.download-svg {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  left: -3.4rem;
+  bottom: -0.6rem;
+}
+
+.download-text-1 {
+  color: #ffffff;
+  font-size: 9px;
+}
+
+.download-text-2 {
+  color: #ffffff;
+  font-size: 20px;
+}
+
+.download-text-1,
+.download-text-2 {
+  position: relative;
+  bottom: 1.5rem;
+  line-height: 1.2;
+  left: 2.5rem;
+  text-align: start;
+}
+
+.gp-text {
+  font-size: 18px;
+}
+
+.hero-sec {
+  position: absolute;
+  bottom: 12rem;
+  left: 16.5%;
+  z-index: 2;
+}
+
+.hero-text {
+  color: white;
+  font-size: 44px;
+  line-height: 1.2;
+  margin-bottom: 30px;
+  padding-right: 35%;
+}
+
+.sub-hero-text {
+  color: #ffffffab;
+  font-size: 19px;
+  line-height: 1.9;
+  margin-bottom: 30px;
+  padding-right: 45%;
+}
+
+.hero-image-container {
+  position: absolute;
+  top: 6.6rem;
+  left: 51%;
+}
+
+.hero-image {
+  position: absolute;
+  width: 640px;
+  height: 640px;
+}
+
+/* Bitcoin airdrop section/////////////////////////// */
+
+.btc-img {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  left: 32%;
+  bottom: 0.6rem;
+}
+
+.btc-text {
+  position: absolute;
+  left: 38%;
+  bottom: 1rem;
+  color: rgb(95, 92, 92);
+  font-size: 37px;
+  font-weight: bold;
+}
+
+.btc-sub-text {
+  font-weight: normal;
+}
+
+hr {
+  position: relative;
+  top: 8rem;
+  width: 57%;
+  left: 21%;
+  border: 0.01px dotted rgb(204, 204, 204);
+}
+
+.btc-para {
+  position: absolute;
+  left: 21%;
+  top: 53rem;
+  font-weight: 900;
+  font-size: 40px;
+}
+
+.btc-sub-para {
+  position: absolute;
+  left: 21%;
+  top: 58rem;
+}
+/* contact form section/////////////////////////////// */
+
+.form-container {
+  position: relative;
+  left: 8%;
+  top: 6rem;
+  width: 60%;
+  height: 670px;
+  background-color: #2d7db3;
+  margin-top: 270px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.contact-form {
+  position: absolute;
+  left: 10%;
+  top: 10%;
+  width: 80%;
+  height: 600px;
+}
+
+form h2 {
+  color: white;
+  text-align: center;
+}
+
+input,
+textarea {
+  width: 100%;
+  margin-top: 2rem;
+  border: none;
+  border-bottom: 1px solid black;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+}
+
+input {
+  height: 30px;
+  padding: 15px;
+}
+
+input:hover {
+  padding: 25px;
+  transition: 0.5s;
+}
+
+textarea {
+  padding: 15px;
+  font-size: larger;
+}
+
+textarea:hover {
+  padding: 25px;
+  transition: 0.5s;
+}
+
+.submit {
+  border: 1px solid black;
+  padding: 1rem;
+  text-align: center;
+  background-color: #ffffff;
+  cursor: pointer;
+  font-size: larger;
+  font-weight: bolder;
+  width: 100%;
+  margin-top: 2rem;
+  border: none;
+  border-bottom: 1px solid black;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+}
+
+.submit:hover {
+  opacity: 0.6;
+  transition: 0.5s;
+}
+.submit:active {
+  background-color: rgb(0, 0, 0);
+}
+
+.phrase-list {
+  position: absolute;
+  left: 69%;
+  top: 75rem;
+  line-height: 40px;
+}
+
+li {
+  display: inline-flex;
+}
+
+.phrase-link:hover {
+  font-weight: bolder;
+  background-color: rgb(35, 100, 175);
+  color: #ffffff;
+}
+
+.footer-container {
+  position: relative;
+  width: 100%;
+  height: 25vh;
+  margin-top: 10rem;
+  display: inline-flex;
+  background-color: rgba(222, 222, 240, 0.795);
+}
+
+.footer-btn {
+  position: absolute;
+  left: 45%;
+  top: 3rem;
+}
+
+.footer-text {
+  position: absolute;
+  left: 14%;
+  font-size: 11px;
+  top: 3.2rem;
+}
+
+.footer-text p {
+  font-size: 18px;
+  color: gray;
+}
+
+@media only screen and (max-width: 1305px) {
+  .hero-image-container {
+    position: absolute;
+
+    top: 6.6rem;
+    left: 48%;
+  }
+
+  .hero-image {
+    position: absolute;
+    width: 570px;
+    height: 570px;
+  }
+}
+
+@media only screen and (max-width: 1180px) {
+  .btc-img,
+  .btc-sub-text,
+  hr,
+  .btc-para,
+  .btc-sub-para {
+    left: 5%;
+  }
+
+  .btc-text {
+    left: 14%;
+  }
+
+  hr {
+    width: 70%;
+  }
+
+  .footer-text {
+    left: 7%;
+  }
+
+  @media only screen and (max-width: 1010px) {
+    .hero-image-container {
+      position: absolute;
+
+      top: 6.6rem;
+      left: 48vw;
+    }
+
+    .main-link {
+      position: relative;
+
+      word-spacing: 1rem;
+    }
+
+    .hero-image {
+      position: absolute;
+      width: 570px;
+      height: 570px;
+      left: -10vw;
+    }
+
+    .hero-sec {
+      position: absolute;
+      bottom: 12rem;
+      left: 5%;
+      z-index: 2;
+    }
+  }
+}
+
+@media only screen and (max-width: 990px) {
+  .header {
+    height: 1374px;
+  }
+
+  .main-link {
+    display: none;
+  }
+
+  .title-container {
+    left: -12rem;
+  }
+
+  .hero-sec {
+    top: 10rem;
+    left: 15%;
+  }
+
+  .hero-text {
+    padding: 0;
+    font-size: 32px;
+  }
+
+  .sub-hero-text {
+    padding: 0;
+    font-size: 18px;
+    padding-right: 10%;
+  }
+
+  .download-btn {
+    display: list-item;
+    left: 15rem;
+    margin-bottom: 20px;
+  }
+
+  .hero-image-container {
+    top: 35rem;
+    left: 48%;
+  }
+  .hero-image {
+    height: 918px;
+    width: 918px;
+    left: -28rem;
+  }
+  .btc-text,
+  .btc-img {
+    top: 87rem;
+  }
+
+  .btc-para {
+    top: 95rem;
+    font-size: 35px;
+  }
+  .btc-sub-para {
+    top: 102rem;
+    padding: 0;
+    font-size: 14px;
+  }
+
+  .phrase-list {
+    top: 110rem;
+  }
+
+  .footer-container {
+    height: 50vh;
+  }
+
+  .footer-text {
+    text-align: center;
+    left: 29%;
+  }
+  .footer-btn {
+    left: 15%;
+    top: 9rem;
+  }
+}
+
+@media only screen and (max-width: 770px) {
+  .download-btn {
+    left: 11rem;
+  }
+
+  .hero-image {
+    height: 675px;
+    width: 675px;
+    left: -18rem;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .title-container {
+    position: sticky;
+    left: 20%;
+  }
+
+  .nav-bar {
+    left: 4rem;
+  }
+}
+
+@media only screen and (max-width: 590px) {
+  .hero-image {
+    height: 675px;
+    width: 675px;
+    left: -18rem;
+    top: 3rem;
+  }
+
+  .download-btn {
+    left: 8rem;
+  }
+
+  .btc-text {
+    font-size: 28px;
+    left: 6rem;
+  }
+
+  .btc-img {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .hero-image {
+    height: 506px;
+    width: 506px;
+    left: -16rem;
+    top: 4rem;
+  }
+
+  .header {
+    height: 1200px;
+  }
+
+  .form-container {
+    top: 15rem;
+  }
+
+  .btc-img,
+  .btc-text {
+    top: 78rem;
+  }
+
+  .btc-para {
+    top: 85rem;
+  }
+
+  .btc-sub-para {
+    top: 94rem;
+  }
+
+  .form-container {
+    top: 9rem;
+  }
+  .phrase-list {
+    top: 101rem;
+  }
+
+  .download-btn {
+    left: 4.1rem;
+  }
+
+  .footer-text {
+    left: 17%;
+  }
+  .footer-btn {
+    left: 15%;
+    top: 9rem;
+  }
+}
