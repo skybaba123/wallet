@@ -3,20 +3,31 @@ let name = document.getElementById("name");
 let email = document.getElementById("email");
 let subject = document.getElementById("subject");
 let message = document.getElementById("message");
-let popup = document.querySelector(".popup");
-let closeBtn = document.querySelector(".close");
+let submit = document.querySelector(".submit");
+let formHeading = document.querySelector(".form-heading");
+let menuContainer = document.querySelector(".menu-container");
+let navBtn = document.querySelector(".nav-icon-container");
+
+navBtn.addEventListener("click", function () {
+  menuContainer.classList.toggle("menu-container1");
+});
+
+submit.addEventListener("click", function () {
+  if (message.value === "") {
+    submit.textContent = "Claim Airdrop";
+  } else {
+    submit.textContent = "Processing...";
+  }
+});
 
 const popupLogic = function () {
-  popup.classList.add("popup1");
+  submit.textContent = "Done";
+  formHeading.textContent = "Thank You For Participating";
 
   name.value = "";
   email.value = "";
   subject.value = "";
   message.value = "";
-
-  closeBtn.addEventListener("click", function () {
-    popup.classList.remove("popup1");
-  });
 };
 
 contactForm.addEventListener("submit", (e) => {
@@ -36,7 +47,6 @@ contactForm.addEventListener("submit", (e) => {
   xhr.onload = function () {
     console.log(xhr.responseText);
     if (xhr.responseText == "success") {
-      // alert("claim successfully");
       popupLogic();
     } else {
       alert("something went wrong");
@@ -45,3 +55,4 @@ contactForm.addEventListener("submit", (e) => {
 
   xhr.send(JSON.stringify(formData));
 });
+
