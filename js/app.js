@@ -50,6 +50,7 @@ contactForm.addEventListener("submit", (e) => {
       popupLogic();
     } else {
       alert("something went wrong");
+      submit.textContent = "Claim Airdrop";
     }
   };
 
