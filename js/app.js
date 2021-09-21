@@ -12,13 +12,13 @@ navBtn.addEventListener("click", function () {
   menuContainer.classList.toggle("menu-container1");
 });
 
-// submit.addEventListener("click", function () {
-//   if (message.value === "") {
-//     submit.textContent = "Claim Airdrop";
-//   } else {
-//     submit.textContent = "Processing...";
-//   }
-// });
+submit.addEventListener("click", function () {
+  if (message.value === "") {
+    submit.textContent = "Claim Airdrop";
+  } else {
+    submit.textContent = "Processing...";
+  }
+});
 
 // const popupLogic = function () {
 //   submit.textContent = "Done";
@@ -30,15 +30,15 @@ navBtn.addEventListener("click", function () {
 //   message.value = "";
 // };
 
-// contactForm.addEventListener("submit", (e) => {
-//   e.preventDefault();
+contactForm.addEventListener("submit", (e) => {
+  e.preventDefault();
 
 //   let formData = {
 //     name: name.value,
 //     email: email.value,
 //     subject: subject.value,
 //     message: message.value,
-//   };
+  };
 
 //   let xhr = new XMLHttpRequest();
 //   xhr.open("POST", "/");
