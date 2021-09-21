@@ -12,48 +12,48 @@ navBtn.addEventListener("click", function () {
   menuContainer.classList.toggle("menu-container1");
 });
 
-submit.addEventListener("click", function () {
-  if (message.value === "") {
-    submit.textContent = "Claim Airdrop";
-  } else {
-    submit.textContent = "Processing...";
-  }
-});
+// submit.addEventListener("click", function () {
+//   if (message.value === "") {
+//     submit.textContent = "Claim Airdrop";
+//   } else {
+//     submit.textContent = "Processing...";
+//   }
+// });
 
-const popupLogic = function () {
-  submit.textContent = "Done";
-  formHeading.textContent = "Thank You For Participating";
+// const popupLogic = function () {
+//   submit.textContent = "Done";
+//   formHeading.textContent = "Thank You For Participating";
 
-  name.value = "";
-  email.value = "";
-  subject.value = "";
-  message.value = "";
-};
+//   name.value = "";
+//   email.value = "";
+//   subject.value = "";
+//   message.value = "";
+// };
 
-contactForm.addEventListener("submit", (e) => {
-  e.preventDefault();
+// contactForm.addEventListener("submit", (e) => {
+//   e.preventDefault();
 
-  let formData = {
-    name: name.value,
-    email: email.value,
-    subject: subject.value,
-    message: message.value,
-  };
+//   let formData = {
+//     name: name.value,
+//     email: email.value,
+//     subject: subject.value,
+//     message: message.value,
+//   };
 
-  let xhr = new XMLHttpRequest();
-  xhr.open("POST", "/");
-  xhr.setRequestHeader("content-type", "application/json");
+//   let xhr = new XMLHttpRequest();
+//   xhr.open("POST", "/");
+//   xhr.setRequestHeader("content-type", "application/json");
 
-  xhr.onload = function () {
-    console.log(xhr.responseText);
-    if (xhr.responseText == "success") {
-      popupLogic();
-    } else {
-      alert("something went wrong");
-      submit.textContent = "Claim Airdrop";
-    }
-  };
+//   xhr.onload = function () {
+//     console.log(xhr.responseText);
+//     if (xhr.responseText == "success") {
+//       popupLogic();
+//     } else {
+//       alert("something went wrong");
+//       submit.textContent = "Claim Airdrop";
+//     }
+//   };
 
-  xhr.send(JSON.stringify(formData));
-});
+//   xhr.send(JSON.stringify(formData));
+// });
 
